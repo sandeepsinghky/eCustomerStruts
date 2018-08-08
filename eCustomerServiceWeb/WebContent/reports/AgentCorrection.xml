@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="AgentCorrection" pageWidth="842" pageHeight="595" whenNoDataType="AllSectionsNoDetail" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10">
+	<reportFont name="Arial_Normal" isDefault="true" fontName="Arial" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Bold" isDefault="false" fontName="Arial" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Bold_Big" isDefault="false" fontName="Arial" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Italic" isDefault="false" fontName="Arial" size="10" isBold="false" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Oblique" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<parameter name="BaseDir" class="java.io.File">
+	</parameter>
+	<parameter name="ReportTitle" class="java.lang.String">
+	</parameter>
+	<parameter name="FROMDATE" class="java.lang.String">
+	</parameter>
+	<parameter name="TODATE" class="java.lang.String">
+	</parameter>
+	<field name="id_reference" class="java.lang.String">
+	</field>
+	<field name="cdResolution" class="java.lang.String">
+	</field>
+	<field name="nbResolution" class="java.lang.String">
+	</field>
+	<field name="dt_created" class="java.lang.String">
+	</field>
+	<field name="dt_completed" class="java.lang.String">
+	</field>
+	<field name="nm_wrkr_l" class="java.lang.String">
+	</field>
+	<field name="nm_wrkr_f" class="java.lang.String">
+	</field>
+	<field name="nm_wrkr_mi" class="java.lang.String">
+	</field>
+	<group name="AgentGroup" minHeightToStartNewPage="60">
+		<groupExpression><![CDATA[$F{nm_wrkr_f} + " " + $F{nm_wrkr_mi} + " " + $F{nm_wrkr_l}]]></groupExpression>
+		<groupHeader>
+		<band height="30">
+			<elementGroup>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="15"></reportElement>
+				<textElement>
+					<font reportFont="Arial_Normal"></font>
+				</textElement>
+				<text><![CDATA[Agent Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="300" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nm_wrkr_f} + " " + $F{nm_wrkr_mi} + " " + $F{nm_wrkr_l}]]></textFieldExpression>
+			</textField>
+			</elementGroup>
+		</band>
+		</groupHeader>
+		<groupFooter>
+		<band height="20">
+			<staticText>
+				<reportElement x="390" y="0" width="100" height="15"/>
+				<textElement textAlignment="Center">
+					<font reportFont="Arial_Normal"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="490" y="0" width="100" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{AgentGroup_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="120">
+			<image hAlign="Center">
+				<reportElement x="0" y="0" width="375" height="64"/>
+				<graphicElement/>
+				<imageExpression class="java.io.File"><![CDATA[new File($P{BaseDir}, "/images/header.gif")]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="201" y="72" width="400" height="20"/>
+				<textElement textAlignment="Center">
+					<font reportFont="Arial_Bold_Big" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{ReportTitle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="304" y="95" width="200" height="18"/>
+				<textElement textAlignment="Center">
+					<font reportFont="Arial_Bold_Big" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOCAL SUPPORT UNIT]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="507" y="95" width="293" height="17"/>
+				<textElement textAlignment="Right">
+					<font reportFont="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["FROM DATE: " + $P{FROMDATE} + " TO DATE: " + $P{TODATE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28">
+			<line>
+				<reportElement x="0" y="0" width="800" height="0" forecolor="#333300"/>
+				<graphicElement pen="1Point"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="6" width="90" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Bold"/>
+				</textElement>
+				<text><![CDATA[Reference ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="6" width="150" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Bold"/>
+				</textElement>
+				<text><![CDATA[Resolution Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="6" width="150" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Bold"/>
+				</textElement>
+				<text><![CDATA[Resolution Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="6" width="100" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Bold"/>
+				</textElement>
+				<text><![CDATA[Date Created]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="6" width="100" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Bold"/>
+				</textElement>
+				<text><![CDATA[Date Completed]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="22" width="800" height="0" forecolor="#333300"/>
+				<graphicElement pen="1Point"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="90" height="15"/>
+				<textElement>
+					<font fontName="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{id_reference}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="150" height="15"/>
+				<textElement>
+					<font fontName="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cdResolution}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="150" height="15"/>
+				<textElement>
+					<font fontName="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nbResolution}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="100" height="15"/>
+				<textElement>
+					<font fontName="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dt_created}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="100" height="15"/>
+				<textElement>
+					<font fontName="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dt_completed}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15">
+			<textField>
+				<reportElement x="650" y="0" width="80" height="15"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page " + String.valueOf($V{PAGE_NUMBER}) + " of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="730" y="0" width="75" height="15"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + String.valueOf($V{PAGE_NUMBER})]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20">
+			<staticText>
+				<reportElement x="390" y="0" width="100" height="15"/>
+				<textElement textAlignment="Center">
+					<font reportFont="Arial_Normal"/>
+				</textElement>
+				<text><![CDATA[Report Total:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="490" y="0" width="100" height="15"/>
+				<textElement>
+					<font reportFont="Arial_Normal"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[String.valueOf($V{REPORT_COUNT})]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="ScheduleTasks" pageWidth="842" pageHeight="595" columnSpacing="0" leftMargin="20" rightMargin="20" topMargin="10" bottomMargin="10">
+	<reportFont name="Arial_Normal" isDefault="true" fontName="Arial" size="12" ></reportFont>
+	<reportFont name="Arial_Bold" isDefault="false" fontName="Arial" size="12" isBold="true" />
+	<reportFont name="Arial_Bold_Big" isDefault="false" fontName="Arial" size="16" isBold="true" />
+	<reportFont name="Arial_Italic" isDefault="false" fontName="Arial" size="12" isItalic="true" />
+	<parameter name="month" class="java.lang.String"></parameter>
+	<parameter name="year" class="java.lang.String"></parameter>
+	<parameter name="BaseDir" class="java.io.File" />
+	<parameter name="ReportTitle" class="java.lang.String"></parameter>
+	<field name="triggerName" class="java.lang.String"></field>
+	<field name="jobDetails" class="java.lang.String"></field>
+	<field name="prevRun" class="java.lang.String"></field>
+	<field name="nextRun" class="java.lang.String"></field>
+	<field name="startTime" class="java.lang.String"></field>
+	<field name="misfireInstruction" class="java.lang.String"></field>
+	<field name="isVolatile" class="java.lang.String"></field>
+	<title>
+		<band height="90">
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Top">
+				<reportElement x="0" y="0" width="375" height="64"></reportElement>
+				<imageExpression class="java.io.File">new File($P{BaseDir}, "/images/header.gif")</imageExpression>
+			</image>
+			<textField>
+				<reportElement width="400" y="72" x="201" height="20"></reportElement>
+				<textElement textAlignment="Center"></textElement>
+				<textFieldExpression class="java.lang.String">$P{ReportTitle}</textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28">
+			<line>
+				<reportElement width="800" y="0" x="0" height="0" forecolor="#333300" mode="Opaque"></reportElement>
+				<graphicElement pen="1Point" fill="Solid" />
+			</line>
+			<staticText>
+				<reportElement width="120" y="6" x="0" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold"></font>
+				</textElement>
+				<text>Trigger Name</text>
+			</staticText>
+			<staticText>
+				<reportElement width="120" y="6" x="120" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>Job Name</text>
+			</staticText>
+			<staticText>
+				<reportElement width="100" y="6" x="240" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>Previous Run</text>
+			</staticText>
+			<staticText>
+				<reportElement width="100" y="6" x="340" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>Next Run</text>
+			</staticText>
+			<staticText>
+				<reportElement width="100" y="6" x="440" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>Start Time</text>
+			</staticText>
+			<staticText>
+				<reportElement width="100" y="6" x="540" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>MisFire Instruction</text>
+			</staticText>
+			<staticText>
+				<reportElement width="100" y="6" x="640" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Arial_Bold" />
+				</textElement>
+				<text>Volatile?</text>
+			</staticText>
+			<line>
+				<reportElement width="800" y="22" x="0" height="0" forecolor="#333300" mode="Opaque"></reportElement>
+				<graphicElement pen="1Point" fill="Solid" />
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement width="120" y="0" x="0" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{triggerName}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="120" y="0" x="120" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{jobDetails}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="100" y="0" x="240" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{prevRun}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="100" y="0" x="340" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{nextRun}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="100" y="0" x="440" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{startTime}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="100" y="0" x="540" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{misfireInstruction}</textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement width="100" y="0" x="640" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial_Normal"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$F{isVolatile}</textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15">
+			<textField>
+				<reportElement x="650" y="0" width="80" height="15" ></reportElement>
+				<textElement textAlignment="Right" />
+				<textFieldExpression class="java.lang.String">
+					<![CDATA[ "Page " + String.valueOf($V{PAGE_NUMBER}) + " of"  ]]>
+				</textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="730" y="0" width="75" height="15" ></reportElement>
+				<textElement textAlignment="Left" />
+				<textFieldExpression class="java.lang.String">
+					<![CDATA[ " " + String.valueOf($V{PAGE_NUMBER})  ]]>
+				</textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

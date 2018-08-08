@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="WebSphere Application Server traditional V9.0" sequenceNumber="0">
+<locations>
+<location path="C:/Users/pkonuru/work/WAS9.0/IBM/dev" type="Directory"/>
+<location path="C:/Users/pkonuru/work/WAS9.0/IBM/dev/JavaEE" type="Directory"/>
+<location path="C:/Users/pkonuru/work/WAS9.0/IBM/dev/sip" type="Directory"/>
+<location path="C:/Users/pkonuru/work/WAS9.0/IBM/dev/swagger" type="Directory"/>
+<location path="C:/Users/pkonuru/work/WAS9.0/IBM/dev/osgi/4.2" type="Directory"/>
+<location path="C:/Users/pkonuru/work/eclipse_workspace/workspace_customer_new/.metadata/.plugins/com.ibm.etools.aries.core/system/" type="Directory"/>
+</locations>
+</target>

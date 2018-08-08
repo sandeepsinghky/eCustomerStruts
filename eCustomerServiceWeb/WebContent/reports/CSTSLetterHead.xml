@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport 
+		name="CSTSLetterHead" 
+		pageWidth="595" 
+		pageHeight="842" 
+		columnWidth="515" 
+		columnSpacing="0" 
+		leftMargin="40" 
+		rightMargin="40" 
+		topMargin="15" 
+		bottomMargin="15">
+	<reportFont name="Times_Normal_Big" isDefault="true" fontName="Times Roman" size="18" pdfFontName="Times-Roman" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Times_Normal" isDefault="true" fontName="Times Roman" size="17" pdfFontName="Times-Roman" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Times_Small_12" isDefault="true" fontName="Times Roman" size="12" pdfFontName="Times-Roman" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Times_Small_11" isDefault="true" fontName="Times Roman" size="11" pdfFontName="Times-Roman" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Bold" isDefault="false" fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Italic" isDefault="false" fontName="Arial" size="12" isItalic="true" pdfFontName="Helvetica-Oblique" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<parameter name="BaseDir" class="java.io.File"/>
+	<parameter name="txtLine" class="java.lang.String"></parameter>
+	<title>
+		<band height="200">
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Top">
+				<reportElement x="226" y="5" width="63" height="64"></reportElement>
+				<imageExpression class="java.io.File">new File($P{BaseDir}, "../images/nc.gif")</imageExpression>
+			</image>
+			<staticText>
+				<reportElement width="515" y="70" x="0" height="20" forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Normal_Big"></font>
+				</textElement>
+				<text>North Carolina Department of Health and Human Services</text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="90" x="0" height="20" forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Normal_Big"></font>
+				</textElement>
+				<text>Division of Social Services</text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="110" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Left">
+					<font size="10"></font>
+				</textElement>
+				<text> </text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="125" x="0" height="20"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Normal"></font>
+				</textElement>
+				<text>Child Support Enforcement</text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="145" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>2403 Mail Service Center, Raleigh, NC 27699-2403 * Courier # 55-41-12</text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="160" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>Telephone (800) 992-9457</text>
+			</staticText>
+			<staticText>
+				<reportElement width="515" y="175" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text> </text>
+			</staticText>
+			<staticText>
+				<reportElement width="200" y="190" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>Michael F. Easley, Governor</text>
+			</staticText>
+			<staticText>
+				<reportElement width="200" y="190" x="300" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Right">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>Sherry S. Bradsher, Director</text>
+			</staticText>
+			<staticText>
+				<reportElement width="200" y="205" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>Dempsey Benton, Secretary</text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20">
+			<staticText>
+				<reportElement width="515" y="0" x="0" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font size="10"></font>
+				</textElement>
+				<text> </text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement width="515" y="15" x="0" height="15"></reportElement>
+				<textElement textAlignment="Left">
+					<font reportFont="Times_Small_12"></font>
+				</textElement>
+				<textFieldExpression class="java.lang.String">$P{txtLine}</textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="40">
+			<staticText>
+				<reportElement width="515" y="25" x="0" height="15"  forecolor="#000000" mode="Opaque"></reportElement>
+				<textElement textAlignment="Center">
+					<font reportFont="Times_Small_11"></font>
+				</textElement>
+				<text>An Equal Opportunity / Affirmative Action Employer</text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

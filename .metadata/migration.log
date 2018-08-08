@@ -1,0 +1,11 @@
+
+INFO     Validating project: eCustomerService
+INFO     Finished validating project: eCustomerService
+
+INFO     Validating project: eCustomerServiceEJB
+INFO     Finished validating project: eCustomerServiceEJB
+
+INFO     Validating project: eCustomerServiceWeb
+INFO     Finished validating project: eCustomerServiceWeb
+
+Migration complete

@@ -1,0 +1,1107 @@
+#content {
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 2%;
+	background: #fff;
+	border: 1px solid #000;
+	text-align: left;
+	min-width: 500px;
+}
+
+#pageheader {
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-top: -15px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	/*	border-right: 10px solid #f12;
+	border-left: 10px solid #f12;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #fff;
+	text-align: left;
+	width: 900px;
+	/**	min-width: 800px;*/
+}
+
+#pagefooter {
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-bottom: -15px;
+	border-top: 1px solid #000;
+	/*	border-right: 10px solid #f12;
+	border-left: 10px solid #f12;*/
+	border-bottom: 1px solid #000;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #fff;
+	text-align: center;
+	width: 900px;
+	font-family: verdana
+}
+
+#pagebody {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* WLB 
+	background: #FFFFFF; */
+	background: #FFFFF1;
+	/* WLB */
+	text-align: left;
+	width: 900px;
+	/*	min-width: 800px;*/
+}
+
+#navigationbar {
+	font-size: 12px;
+	border-bottom: 1px solid #000;
+	/*	border-right: 10px solid #f12;
+	border-left: 10px solid #f12;*/
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-top: 0px;
+	padding-left: 10px;
+	background: ;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: right;
+	background-image: url("../images/background-menu.gif");
+	background-repeat: repeat-x;
+	/*	width: 100%;*/
+	width: 900px;
+}
+
+h1, h2 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 0px 20px 0px 20px;
+	font-family: verdana
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 0px 20px 0px 20px;
+	font-family: verdana;
+	font-size: 13px;
+}
+
+h2 {
+	font-size: 16px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+#pagetitle h1 {
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/*	border-top: 1px solid #000;*/
+	border-bottom: 1px solid #000;
+	/*	border-right: 10px solid #000;*/
+	border-left: 10px solid #000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 870px;
+}
+
+#errorheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	color:maroon;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#errorheader h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: red;
+	border-top: 1px solid #F00;
+	border-bottom: 1px solid #F00;
+	border-right: 10px solid #F00;
+	border-left: 10px solid #F00;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+}
+
+#messageheader h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: gray;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-right: 10px solid #999;
+	border-left: 10px solid #999;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 200px;
+}
+
+#messageheader p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+html > body#title {
+	width: auto;
+}
+
+a.anchor {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+p.anchor {
+	text-align: right;
+}
+
+.links {
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+/*
+	Style Arrtibutes for Menus
+*/
+div #menu {
+	color: #333333;
+	width: 103px;
+	height: 30 px;
+	/*	background-image: url("images/background-menu.gif");*/
+}
+
+div #menu a {
+	margin-top: 0px;
+	background-image: url("../images/menu_btn.gif");
+	color: #ffffff;
+	width: 100px;
+	height: 20px;
+	/*	margin-bottom: 4px;*/
+	border-collapse: collapse;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11 px;
+}
+
+div #menu a:link {
+	background-image: url("../images/menu_btn.gif");
+}
+
+div #menua:hover {
+	background-image: url("../images/menuh_btn.gif");
+	color: #000000;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11 px;
+}
+
+/**
+	Style Atttributes for Forms
+*/
+.form25 {
+	width: 25%;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.form50 {
+	width: 50%;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.form60 {
+	width: 50%;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.form75 {
+	width: 75%;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.form100 {
+	width: 100%;
+	padding: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+/*
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+*/
+div.row {
+	clear: both;
+	padding-top: 5px;
+}
+
+/*
+div.row span.label {
+	float: left;
+	width: 175px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+div.row span.formw {
+	float: right;
+	width: 400px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+div.row span.formb {
+	float: right;
+	width: 400px;
+	text-align: left;
+	padding-left: 5px;
+	color: #FFFFFF;
+	background-color: #003068;
+}
+*/
+div.row span.buttonborder {
+	width: 50%;
+	float: right;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.row span.buttonborderleft {
+	width: 50%;
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.row span.separator {
+	width: 50%;
+	float: left;
+	padding-top: 5px;
+	padding-left: 40px;
+	padding-right: 5px;
+}
+
+fieldset {
+	margin: 0 0 2em 0;
+	padding: 1em .5em .5em .5em;
+	border: 1px solid #000000;
+}
+
+fieldset.1 {
+	width: 50%;
+	margin: 0 0 2em 0;
+	padding: 1em .5em .5em .5em;
+	border: 1px solid #000000;
+}
+
+legend {
+	padding: 0.2em 0.5em;
+	border: 1px solid black;
+	color: white;
+	font-size: 90%;
+	text-align: right;
+	background-color: black;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+/** New Properties for Labels and Fields **/
+
+.label10 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 60px;
+	text-align: right;
+}
+
+.label15 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 80px;
+	text-align: right;
+}
+
+.label20 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 120px;
+	text-align: right;
+}
+
+.label25 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 150px;
+	text-align: right;
+}
+
+.label30 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 180px;
+	text-align: right;
+}
+
+.label40 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 240px;
+	text-align: right;
+}
+
+.label50 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 300px;
+	text-align: right;
+}
+
+.label60 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 360px;
+	text-align: right;
+}
+
+
+.label75 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 450px;
+	text-align: right;
+}
+
+.label100 {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 300px;
+	text-align: right;
+}
+
+.field1 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field1 input  {
+	width: 20px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field2 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field2 input  {
+	width: 30px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field4 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field4 input  {
+	width: 40px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field8 {
+/*	background-color: #F2F7FB;*/
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field8 input  {
+	width: 80px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field10 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field10 input  {
+	width: 100px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field15 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field15 input  {
+	width: 140px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field17 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field17 input  {
+	width: 160px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field30 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field30 input  {
+	width: 280px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field50 {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field50 input  {
+	width: 400px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+
+.field1r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field1r input  {
+	width: 20px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field2r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field2r input  {
+	width: 30px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field4r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field4r input  {
+	width: 40px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field8r {
+/*	background-color: #F2F7FB;*/
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field8r input  {
+	width: 80px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field10r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field10r input  {
+	width: 100px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field15r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field15r input  {
+	width: 140px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field17r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field17r input  {
+	width: 160px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field30r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field30r input  {
+	width: 280px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field50r {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.field50r input  {
+	width: 400px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field1 select  {
+	width: 40px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field4 select  {
+	width: 60px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field8 select  {
+	width: 80px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field10 select  {
+	width: 100px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field15 select  {
+	width: 150px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field30 select  {
+	width: 220px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+.field35 select  {
+	width: 280px;
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+}
+
+
+.smallfieldcell select {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+}
+
+.clickbutton {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	margin-left: 1px;
+	margin-right: 5px;
+	float: right;
+	border: 1px solid #284279;
+}
+
+.button input {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	margin-left: 1px;
+	margin-right: 5px;
+	float: right;
+	border: 1px solid #284279;
+}
+
+.freeform textarea {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #D7E5F2;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+	text-decoration: none;
+}
+
+.freeformr textarea {
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #CCCCCC;
+	color: #102132;
+	border: 1px solid #284279;
+	margin-right: 0px;
+	text-decoration: none;
+}
+
+.label {
+	font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #003068;
+	background-color: transparent;
+	width: 180px;
+	text-align: right;
+}
+
+.field {
+	font: 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: transparent;
+	text-align: right;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+/********************************************/
+/**
+	Style Properties for Table
+*/
+TH.LABEL {
+	text-align: right;
+	color: #FFFFFF;
+}
+
+H3 {
+	color: #FFFFFF;
+}
+
+/*******************************************
+ * class for the title of the subscription *
+ ******************************************/
+P.SUBSCRIPTION {
+	color: #FFFFFF;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+/********************************************************
+ * color of the thin line surrounding the subscriptions *
+ *******************************************************/
+TABLE.SUBSCRIPTION {
+	background-color: #FFFFFF;
+}
+
+P.SUBS {
+	color: #FFFFFF;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+/*******************************
+ *  background color to use to *
+ *  display the errors         *
+ ******************************/
+TD.ERROR {
+	background-color: #ED4F50;
+}
+
+/***********************************************
+ * color of the thin line surrounding the form *
+ **********************************************/
+TABLE.FORM {
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	border: 0;
+	cellpadding: 0;
+	cellspacing: 0;
+}
+
+TABLE.FORM2 {
+	background-color: #FFFFCC;
+	color: #FFFFFF;
+}
+
+/**************************************
+ * background color of the form title *
+ *************************************/
+TH.FORM {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: left;
+	color: white;
+	background-color: #778899;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	cellspacing: 0;
+	cellpadding: 0;
+}
+
+TH.FORM TR TD {
+	text-align: left;
+	color: white;
+	background-color: #778899;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	cellspacing: 0;
+	cellpadding: 0;
+}
+
+/**************************************
+ * background color of the table cell *
+ *************************************/
+TD.FORM {
+	color: black;
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cellspacing: 0;
+	cellpadding: 0;
+}
+
+/**************************************
+ * background color of the table row *
+ *************************************/
+TR.FORM {
+	color: black;
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+/**************************************
+ * background color of the form title *
+ *************************************/
+TH.FORM2 {
+	color: white;
+	background-color: red;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/**************************************
+ * background color of the table cell *
+ *************************************/
+TD.FORM2 {
+	color: black;
+	background-color: #F5FFFA;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+BODY {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #003366;
+}
+
+TH.BODY {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #003366;
+}
+
+TD.BODY {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #003366;
+}
+/**
+ * Calendar classes
+ */
+
+TD.CALENDRIER {
+	background-color: #C2C2C2; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size: 10px;
+}
+
+A.CALENDRIER {
+	text-decoration: none; 
+	color: #000000;
+}
+
+.CALENDARBORDER {
+	background-color: #336699; //#000000; 
+}
+
+.CALENDARTITLE {
+	background-color: #336699; //#C9252C;
+}
+
+.CALENDARWEEK {
+	background-color: #FFFFFF;
+}
+
+.CALENDARWEEKEND {
+	background-color: #FFF4E5;
+}
+
+.CALENDARSELECTED {
+	background-color: #FF8F01;
+}

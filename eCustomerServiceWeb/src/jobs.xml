@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE quartz PUBLIC "-//Quartz Enterprise Job Scheduler//DTD Job Scheduling Data 1.0//EN" "C://WorkingDirectory//ApplicationServers//ecsts//job_scheduling_data_1_0.dtd">
+<quartz>
+	<job>
+		<job-detail>
+			<name>MonthlyCorrectionReport</name>
+			<group>MonthlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.CorrectionReportJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>mCorrectionReport</name>
+				<group>MonthlyReportGroup</group>
+				<job-name>MonthlyCorrectionReport</job-name>
+				<job-group>MonthlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 * ?</cron-expression>
+				<!--Run 1st of every month at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>QuarterlyCorrectionReport</name>
+			<group>QuarterlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.CorrectionReportJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>qCorrectionReport</name>
+				<group>QuarterlyReportGroup</group>
+				<job-name>QuarterlyCorrectionReport</job-name>
+				<job-group>QuarterlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/3 ?</cron-expression>
+				<!--Run 1st day of the current quarter at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>SemiAnnualCorrectionReport</name>
+			<group>SemiAnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.CorrectionReportJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>sCorrectionReport</name>
+				<group>SemiAnnualReportGroup</group>
+				<job-name>SemiAnnualCorrectionReport</job-name>
+				<job-group>SemiAnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/6 ?</cron-expression>
+				<!--Run 1st day once every 6 month(s) at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>YearlyCorrectionReport</name>
+			<group>AnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.CorrectionReportJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>yCorrectionReport</name>
+				<group>AnnualReportGroup</group>
+				<job-name>YearlyCorrectionReport</job-name>
+				<job-group>AnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/12 ?</cron-expression>
+				<!--Run 1st of every year at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>MonthlySupportTotal</name>
+			<group>MonthlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.SupportTotalJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>mSupportTotal</name>
+				<group>MonthlyReportGroup</group>
+				<job-name>MonthlySupportTotal</job-name>
+				<job-group>MonthlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 * ?</cron-expression>
+				<!--Run 1st of every month at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>QuarterlySupportTotal</name>
+			<group>QuarterlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.SupportTotalJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>qSupportTotal</name>
+				<group>QuarterlyReportGroup</group>
+				<job-name>QuarterlySupportTotal</job-name>
+				<job-group>QuarterlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/3 ?</cron-expression>
+				<!--Run 1st day of the current quarter at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>SemiAnnualSupportTotal</name>
+			<group>SemiAnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.SupportTotalJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>sSupportTotal</name>
+				<group>SemiAnnualReportGroup</group>
+				<job-name>SemiAnnualSupportTotal</job-name>
+				<job-group>SemiAnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/6 ?</cron-expression>
+				<!--Run 1st day once every 6 month(s) at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>YearlySupportTotal</name>
+			<group>AnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.SupportTotalJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>ySupportTotal</name>
+				<group>AnnualReportGroup</group>
+				<job-name>YearlySupportTotal</job-name>
+				<job-group>AnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/12 ?</cron-expression>
+				<!--Run 1st of every year at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>MonthlyTimeframeTracking</name>
+			<group>MonthlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.TimeframeTrackingJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>mTimeframeTracking</name>
+				<group>MonthlyReportGroup</group>
+				<job-name>MonthlyTimeframeTracking</job-name>
+				<job-group>MonthlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 * ?</cron-expression>
+				<!--Run 1st of every month at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>QuarterlyTimeframeTracking</name>
+			<group>QuarterlyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.TimeframeTrackingJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>qTimeframeTracking</name>
+				<group>QuarterlyReportGroup</group>
+				<job-name>QuarterlyTimeframeTracking</job-name>
+				<job-group>QuarterlyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/3 ?</cron-expression>
+				<!--Run 1st day of the current quarter at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>SemiAnnualTimeframeTracking</name>
+			<group>SemiAnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.TimeframeTrackingJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>sTimeframeTracking</name>
+				<group>SemiAnnualReportGroup</group>
+				<job-name>SemiAnnualTimeframeTracking</job-name>
+				<job-group>SemiAnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/6 ?</cron-expression>
+				<!--Run 1st day once every 6 month(s) at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>YearlyTimeframeTracking</name>
+			<group>AnnualReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.TimeframeTrackingJob</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>yTimeframeTracking</name>
+				<group>AnnualReportGroup</group>
+				<job-name>YearlyTimeframeTracking</job-name>
+				<job-group>AnnualReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 0 15 1 1/12 ?</cron-expression>
+				<!--Run 1st of every year at 10:00 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+	<job>
+		<job-detail>
+			<name>ScheduleTasks</name>
+			<group>DailyReportGroup</group>
+			<job-class>org.dhhs.dirm.acts.cs.scheduler.jobs.ScheduleTasks</job-class>
+			<volatility>false</volatility>
+			<durability>true</durability>
+			<recover>true</recover>
+		</job-detail>
+		<trigger>
+			<cron>
+				<name>dScheduleTasks</name>
+				<group>DailyReportGroup</group>
+				<job-name>ScheduleTasks</job-name>
+				<job-group>DailyReportGroup</job-group>
+				<!-- <start-time></start-time>      -->
+				<cron-expression>0 20 7 ? * MON-SAT</cron-expression>
+				<!--Run every day at 7:20 am only mon-sat-->
+			</cron>
+		</trigger>
+	</job>
+</quartz>

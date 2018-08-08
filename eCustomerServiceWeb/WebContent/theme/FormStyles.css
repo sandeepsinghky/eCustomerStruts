@@ -1,0 +1,115 @@
+form {
+	width: 600px;
+/*	background: #CCCCCC;*/
+/*	border: 1px dotted #333;*/
+/*	border: 1px solid #999999;*/
+	padding: 5px;
+/*	margin: 0px auto;*/
+	text-align: center;
+	font-family: verdana;
+	margin-left: 20px;
+}
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	/*	border-color: #88A0C8 #88A0C8 #88A0C8;*/
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	/*	border-color: #88A0C8 #88A0C8 #88A0C8;*/
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10 px;
+	color: #003068;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	/*	border-color: #88A0C8 #88A0C8 #88A0C8;*/
+	border-color: #666666 #666666 #666666;
+	border-style: solid;
+	border-top-width: 1 px;
+	border-right-width: 1 px;
+	border-bottom-width: 1 px;
+	border-left-width: 1 px
+}
+/*
+div.row {
+	font: 14px/18px palatino,garamond,times,serif;
+	clear: both;
+	margin: 5px 10px;
+}
+div.row span.label {
+	float: left;
+	font-weight: bold;
+	color: #69C;
+	background: transparent;
+	width: 30%;
+	text-align: right;
+}
+div.row span.formw {
+	float: right;
+	width: 65%;
+	text-align: left;
+}
+*/
+
+div.row {
+	clear: both;
+	padding-top: 2px;
+}
+
+div.row span.label {
+	float: left;
+	width: 175px;
+	text-align: right;
+}
+
+div.row span.formw {
+	float: right;
+	width: 400px;
+	text-align: left;
+}
+
+div.row span.button {
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding-left: 1px;
+	padding-right: 2px;
+	margin-left: 20%;
+}
+
+
+fieldset {
+	border:1px solid green
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:white;
+  font-size:90%;
+  text-align:right;
+  background-color: green;
+}

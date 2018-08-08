@@ -1,0 +1,29 @@
+div#menu {
+	color: #333333;
+	width: 103px;
+	height: 30 px;
+/*	background-image: url("images/background-menu.gif");*/
+}
+
+div#menu a {
+	margin-top: 0px;
+	background-image: url("../images/menu_btn.gif");
+	color: #ffffff;
+	width: 100px;
+	height: 20px;
+/*	margin-bottom: 4px;*/
+	border-collapse: collapse;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 2px;
+}
+
+div#menu a:link {
+	background-image: url("../images/menu_btn.gif");
+}
+
+div#menu a:hover {
+	background-image: url("../images/menuh_btn.gif");
+	color: #000000;
+	text-align: center;
+}

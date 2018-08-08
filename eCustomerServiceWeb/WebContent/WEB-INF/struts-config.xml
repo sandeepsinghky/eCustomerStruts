@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="logonForm" type="org.dhhs.dirm.acts.cs.formbeans.LogonForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="userSearchForm" type="org.dhhs.dirm.acts.cs.formbeans.UserSearchForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="actsWorkerSearchForm" type="org.dhhs.dirm.acts.cs.formbeans.ActsWorkerSearchForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="userForm" type="org.dhhs.dirm.acts.cs.formbeans.UserForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="profileForm" type="org.dhhs.dirm.acts.cs.formbeans.ProfileForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="referralTypeForm" type="org.dhhs.dirm.acts.cs.formbeans.ReferralTypeForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="referralProcess" type="org.dhhs.dirm.acts.cs.formbeans.ReferralProcess" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="manageTaskForm" type="org.dhhs.dirm.acts.cs.formbeans.ManageTaskForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="preferencesForm" type="org.dhhs.dirm.acts.cs.formbeans.PreferencesFormBean" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="workloadForm" type="org.dhhs.dirm.acts.cs.formbeans.ManageWorkloadForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="processForm" type="org.dhhs.dirm.acts.cs.formbeans.ProcessTypeForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="approvalSearchForm" type="org.dhhs.dirm.acts.cs.formbeans.ManageApprovalForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="officeForm" type="org.dhhs.dirm.acts.cs.formbeans.ReferralOffice" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="referralSourceForm" type="org.dhhs.dirm.acts.cs.formbeans.ReferralSource" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="correspondenceReportForm" type="org.dhhs.dirm.acts.cs.formbeans.CorrespondenceReportForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="localSupportForm" type="org.dhhs.dirm.acts.cs.formbeans.LocalSupportForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="resetPasswordForm" type="org.dhhs.dirm.acts.cs.formbeans.LogonForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="taskSearchForm" type="org.dhhs.dirm.acts.cs.formbeans.ManageTaskForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="approvalTaskForm" type="org.dhhs.dirm.acts.cs.formbeans.ManageTaskForm" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+		<form-bean name="workloadFormBean" type="org.dhhs.dirm.acts.cs.formbeans.WorkloadFormBean" className="org.apache.struts.action.ActionFormBean">
+		</form-bean>
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+		<forward name="logon" path="/Logon.do">
+		</forward>
+		<forward name="welcome" path="/Welcome.do">
+		</forward>
+		<forward name="logoff" path="/Logoff.do">
+		</forward>
+		<forward name="index" path="/index.do">
+		</forward>
+		<forward name="userSearch" path="/UserSearch.do">
+		</forward>
+		<forward name="actsWorkerSearch" path="/ActsWorkerSearch.do">
+		</forward>
+		<forward name="actsWorkerList" path="/ActsWorkerList.do">
+		</forward>
+		<forward name="manageUser" path="/ManageUser.do">
+		</forward>
+		<forward name="manageProfile" path="/ManageProfile.do">
+		</forward>
+		<forward name="profileSearch" path="/ProfileSearch.do">
+		</forward>
+		<forward name="administration" path="/Administration.do">
+		</forward>
+		<forward name="navigation" path="/Navigation.do">
+		</forward>
+		<forward name="manageReferralProcesses" path="/ManageReferralProcesses.do">
+		</forward>
+		<forward name="manageReferral" path="/ManageReferral.do">
+		</forward>
+		<forward name="referralTypes" path="/ReferralTypes.do">
+		</forward>
+		<forward name="taskSearch" path="/TaskSearch.do">
+		</forward>
+		<forward name="manageTask" path="/ManageTask.do">
+		</forward>
+		<forward name="manageWorkload" path="/ManageWorkloadAction.do?reqCode=select">
+		</forward>
+		<forward name="manageProcess" path="/ManageProcess.do">
+		</forward>
+		<forward name="manageWorkloadDetail" path="/ManageWorkloadDetail.do">
+		</forward>
+		<forward name="approvalSearchAction" path="/ApprovalSearchAction.do">
+		</forward>
+		<forward name="approvalSearch" path="/ApprovalSearch.do">
+		</forward>
+		<forward name="manageApproval" path="/ManageApproval.do">
+		</forward>
+		<forward name="manageApprovalAction" path="/ManageApprovalAction.do">
+		</forward>
+		<forward name="reportsManagement" path="/ReportsManagement.do">
+		</forward>
+		<forward name="ManageReferralProcessAction" path="/ManageReferralProcessAction.do">
+		</forward>
+		<forward name="ManageUserAction" path="/ManageUserAction.do">
+		</forward>
+		<forward name="ReferralSearchAction" path="/ReferralSearchAction.do">
+		</forward>
+		<forward name="ManageReferralAction" path="/ManageReferralAction.do">
+		</forward>
+		<forward name="ProcessSearchAction" path="/ProcessSearchAction.do">
+		</forward>
+		<forward name="ManageProcessAction" path="/ManageProcessAction.do">
+		</forward>
+		<forward name="officeList" path="/OfficeList.do">
+		</forward>
+		<forward name="manageOffice" path="/ManageOffice.do">
+		</forward>
+		<forward name="manageReferralSource" path="/ManageReferralSource.do">
+		</forward>
+		<forward name="ManageReferralSourceAction" path="/ManageReferralSourceAction.do">
+		</forward>
+		<forward name="CorrespondenceReportAction" path="/CorrespondenceReportAction.do">
+		</forward>
+		<forward name="correspondenceReport" path="/CorrespondenceReport.do">
+		</forward>
+		<forward name="LocalSupportReportAction" path="/LocalSupportReportAction.do">
+		</forward>
+		<forward name="localSupportReport" path="/LocalSupportReport.do">
+		</forward>
+		<forward name="workloadSearch" path="/WorkloadSearch.do">
+		</forward>
+		<forward name="workloadManagementMenu" path="/WorkloadManagement.do">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action path="/Logon" type="org.apache.struts.actions.ForwardAction" parameter="/Logon.jsp">
+		</action>
+		<action path="/Welcome" type="org.apache.struts.actions.ForwardAction" parameter="/Welcome.jsp">
+		</action>
+		<action path="/index" type="org.apache.struts.actions.ForwardAction" parameter="/index.jsp">
+		</action>
+		<action path="/UserSearch" type="org.apache.struts.actions.ForwardAction" parameter="/UserSearch.jsp">
+		</action>
+		<action path="/ActsWorkerSearch" type="org.apache.struts.actions.ForwardAction" parameter="/ActsWorkerSearch.jsp">
+		</action>
+		<action path="/ActsWorkerList" type="org.apache.struts.actions.ForwardAction" parameter="/ActsWorkerList.jsp">
+		</action>
+		<action path="/ManageUser" type="org.apache.struts.actions.ForwardAction" parameter="/ManageUser.jsp">
+		</action>
+		<action path="/ManageProfile" type="org.apache.struts.actions.ForwardAction" parameter="/ManageProfile.jsp">
+		</action>
+		<action path="/ProfileSearch" type="org.apache.struts.actions.ForwardAction" parameter="/ProfileSearch.jsp">
+		</action>
+		<action path="/Administration" type="org.apache.struts.actions.ForwardAction" parameter="/Administration.jsp">
+		</action>
+		<action path="/ReferralTypes" type="org.apache.struts.actions.ForwardAction" parameter="/ReferralTypes.jsp">
+		</action>
+		<action path="/ManageReferral" type="org.apache.struts.actions.ForwardAction" parameter="/ManageReferral.jsp">
+		</action>
+		<action path="/ManageReferralProcesses" type="org.apache.struts.actions.ForwardAction" parameter="/ManageReferralProcesses.jsp">
+		</action>
+		<action path="/TaskSearch" type="org.apache.struts.actions.ForwardAction" parameter="/TaskSearch.jsp" name="taskForm" scope="request">
+		</action>
+		<action path="/ManageTask" type="org.apache.struts.actions.ForwardAction" parameter="/ManageTask.jsp">
+		</action>
+		<action path="/ManageUserPreferences" type="org.apache.struts.actions.ForwardAction" parameter="/ManageUserPreferences.jsp">
+		</action>
+		<action path="/ManageWorkload" type="org.apache.struts.actions.ForwardAction" parameter="/ManageWorkload.jsp">
+		</action>
+		<action path="/ManageProcess" type="org.apache.struts.actions.ForwardAction" parameter="/ManageProcess.jsp">
+		</action>
+		<action path="/ManageWorkloadDetail" type="org.apache.struts.actions.ForwardAction" parameter="/ManageWorkloadDetail.jsp">
+		</action>
+		<action path="/ManageApproval" type="org.apache.struts.actions.ForwardAction" parameter="/ManageApproval.jsp">
+		</action>
+		<action path="/ReportsManagement" type="org.apache.struts.actions.ForwardAction" parameter="/ReportsManagement.jsp">
+		</action>
+		<action path="/LogonSubmit" input="/Logon.jsp" type="org.dhhs.dirm.acts.cs.struts.LogonAction" name="logonForm" scope="request" validate="true" parameter="reqCode">
+			<forward name="success" path="/Welcome.jsp">
+			</forward>
+			<forward name="password_reset" path="/PasswordReset.jsp">
+			</forward>
+		</action>
+		<action path="/Logoff" type="org.dhhs.dirm.acts.cs.struts.LogoffAction">
+			<forward name="success" path="/Logon.jsp">
+			</forward>
+		</action>
+		<action path="/UserSearchAction" type="org.dhhs.dirm.acts.cs.struts.UserSearchAction" input="/UserSearch.jsp" name="userSearchForm" scope="request">
+			<forward name="success" path="/UserSearch.jsp">
+			</forward>
+		</action>
+		<action path="/ActsWorkerSearchAction" type="org.dhhs.dirm.acts.cs.struts.ActsWorkerSearchAction" input="/ActsWorkerSearch.jsp" name="actsWorkerSearchForm" scope="request">
+			<forward name="success" path="/ActsWorkerSearch.jsp">
+			</forward>
+		</action>
+		<action path="/ManageUserAction" type="org.dhhs.dirm.acts.cs.struts.ManageUserAction" name="userForm" scope="request" input="/ManageUser.jsp" parameter="reqCode">
+			<forward name="success" path="/ManageUser.jsp">
+			</forward>
+			<forward name="createsuccess" path="/UserSearch.jsp">
+			</forward>
+		</action>
+		<action path="/ManageProfileAction" type="org.dhhs.dirm.acts.cs.struts.ManageProfileAction" name="profileForm" scope="request" input="/ManageProfile.jsp" parameter="reqCode" validate="true">
+			<forward name="create" path="/ManageProfile.jsp">
+			</forward>
+			<forward name="edit" path="/ManageProfile.jsp">
+			</forward>
+			<forward name="view" path="/ManageProfile.jsp">
+			</forward>
+			<forward name="store" path="/ProfileSearchAction.do">
+			</forward>
+			<forward name="save" path="/ProfileSearchAction.do">
+			</forward>
+		</action>
+		<action path="/ProfileSearchAction" type="org.dhhs.dirm.acts.cs.struts.ProfileSearchAction" input="/ProfileSearch.jsp" name="profileForm" scope="request">
+			<forward name="success" path="/ProfileSearch.jsp">
+			</forward>
+		</action>
+		<action path="/Navigation" type="org.dhhs.dirm.acts.cs.struts.Navigation">
+		</action>
+		<action path="/ManageReferralAction" type="org.dhhs.dirm.acts.cs.struts.ManageReferralAction" input="/ManageReferral.jsp" parameter="reqCode" name="referralTypeForm" scope="request" validate="false">
+			<forward name="success" path="/ManageReferral.jsp">
+			</forward>
+			<forward name="save" path="/ReferralSearchAction.do">
+			</forward>
+			<forward name="store" path="/ReferralSearchAction.do">
+			</forward>
+			<forward name="delete" path="/ReferralSearchAction.do">
+			</forward>
+			<forward name="deleteFailure" path="/ReferralTypes.jsp">
+			</forward>
+		</action>
+		<action path="/ReferralSearchAction" type="org.dhhs.dirm.acts.cs.struts.ReferralSearchAction">
+			<forward name="success" path="/ReferralTypes.jsp">
+			</forward>
+		</action>
+		<action path="/ProcessSearchAction" type="org.dhhs.dirm.acts.cs.struts.ProcessSearchAction">
+			<forward name="success" path="/ProcessTypes.jsp">
+			</forward>
+		</action>
+		<action path="/ManageReferralProcessAction" type="org.dhhs.dirm.acts.cs.struts.ManageReferralProcessAction" input="/ManageReferral.jsp" name="referralProcess" scope="request" parameter="reqCode">
+			<forward name="success" path="/ManageReferralProcesses.jsp">
+			</forward>
+			<forward name="save" path="/ManageReferralAction.do">
+			</forward>
+			<forward name="deleteAll" path="/ManageReferralAction.do">
+			</forward>
+			<forward name="delete" path="/ManageReferralAction.do">
+			</forward>
+			<forward name="duplicate" path="/ManageReferralProcesses.jsp">
+			</forward>
+		</action>
+		<action path="/TaskSearchAction" type="org.dhhs.dirm.acts.cs.struts.TaskSearchAction" input="/TaskSearch.jsp" name="taskSearchForm" scope="request" validate="false">
+			<forward name="success" path="/TaskSearch.jsp">
+			</forward>
+		</action>
+		<action path="/ManageTaskAction" type="org.dhhs.dirm.acts.cs.struts.ManageTaskAction" input="/ManageTask.jsp" name="manageTaskForm" scope="request" parameter="reqCode" validate="false">
+			<forward name="success" path="/ManageTask.jsp">
+			</forward>
+			<forward name="store" path="/TaskSearch.jsp">
+			</forward>
+			<forward name="save" path="/ManageTaskAction.do">
+			</forward>
+			<forward name="transfer" path="/WorkloadSearch.jsp">
+			</forward>
+		</action>
+		<action path="/UserPreferencesAction" type="org.dhhs.dirm.acts.cs.struts.UserPreferencesAction" input="/ManageUserPreferences.jsp" parameter="reqCode" name="preferencesForm" scope="request">
+			<forward name="success" path="/ManageUserPreferences.jsp">
+			</forward>
+		</action>
+		<action path="/ManageWorkloadAction" type="org.dhhs.dirm.acts.cs.struts.ManageWorkloadAction" input="/ManageWorkload.jsp" parameter="reqCode" name="workloadForm" scope="request">
+			<forward name="source" path="/ManageWorkload.jsp">
+			</forward>
+			<forward name="target" path="/ManageWorkloadDetail.jsp">
+			</forward>
+			<forward name="transfer" path="/ManageWorkloadAction.do?reqCode=select">
+			</forward>
+			<forward name="validationError" path="/ManageWorkloadDetail.jsp">
+			</forward>
+		</action>
+		<action path="/ManageProcessAction" type="org.dhhs.dirm.acts.cs.struts.ManageProcessAction" parameter="reqCode" input="/ManageProcess.jsp" name="processForm" scope="request">
+			<forward name="success" path="/ManageProcess.jsp">
+			</forward>
+			<forward name="store" path="/ProcessSearchAction.do">
+			</forward>
+		</action>
+		<action path="/ApprovalSearchAction" type="org.dhhs.dirm.acts.cs.struts.ApprovalSearchAction" input="/ApprovalSearch.jsp" name="approvalSearchForm" scope="request" parameter="reqCode">
+			<forward name="success" path="/ApprovalSearch.do">
+			</forward>
+		</action>
+		<action path="/ApprovalSearch" type="org.apache.struts.actions.ForwardAction" parameter="/ApprovalSearch.jsp">
+		</action>
+		<action path="/ManageApprovalAction" type="org.dhhs.dirm.acts.cs.struts.ManageApprovalAction" input="/ManageApproval.jsp" parameter="reqCode" name="approvalTaskForm" scope="request" validate="false">
+			<forward name="success" path="/ManageApproval.jsp">
+			</forward>
+			<forward name="save" path="/ManageApprovalAction.do">
+			</forward>
+		</action>
+		<action path="/ManageOfficeAction" type="org.dhhs.dirm.acts.cs.struts.ManageOfficeAction" input="/ManageOffice.jsp" parameter="reqCode" name="officeForm" scope="request" validate="false">
+			<forward name="load" path="/OfficeList.jsp">
+			</forward>
+			<forward name="success" path="/ManageOffice.jsp">
+			</forward>
+			<forward name="store" path="/ManageOfficeAction.do?reqCode=load">
+			</forward>
+		</action>
+		<action path="/OfficeList" type="org.apache.struts.actions.ForwardAction" parameter="/OfficeList.jsp">
+		</action>
+		<action path="/ManageOffice" type="org.apache.struts.actions.ForwardAction" parameter="/ManageOffice.jsp">
+		</action>
+		<action path="/ManageReferralSourceAction" type="org.dhhs.dirm.acts.cs.struts.ManageReferralSourceAction" input="/ManageReferralSource.jsp" parameter="reqCode" name="referralSourceForm" scope="request">
+			<forward name="success" path="/ManageReferralSource.jsp">
+			</forward>
+			<forward name="store" path="/ManageOfficeAction.do">
+			</forward>
+			<forward name="save" path="/ManageOfficeAction.do">
+			</forward>
+		</action>
+		<action path="/ManageReferralSource" type="org.apache.struts.actions.ForwardAction" parameter="/ManageReferralSource.jsp">
+		</action>
+		<action path="/CorrespondenceReport" type="org.apache.struts.actions.ForwardAction" parameter="/CorrespondenceReport.jsp">
+		</action>
+		<action path="/CorrespondenceReportAction" type="org.dhhs.dirm.acts.cs.struts.CorrespondenceReportAction" input="/CorrespondenceReport.jsp" parameter="reqCode" name="correspondenceReportForm" scope="request">
+			<forward name="success" path="/CorrespondenceReport.jsp">
+			</forward>
+		</action>
+		<action path="/Datepopup" type="org.apache.struts.actions.ForwardAction" parameter="/Datepopup.jsp">
+		</action>
+		<action path="/LocalSupportReport" type="org.apache.struts.actions.ForwardAction" parameter="/LocalSupportReport.jsp">
+		</action>
+		<action path="/LocalSupportReportAction" type="org.dhhs.dirm.acts.cs.struts.LocalSupportReportAction" input="/LocalSupportReport.jsp" parameter="reqCode" name="localSupportForm" scope="request">
+		</action>
+		<action path="/PasswordResetAction" type="org.dhhs.dirm.acts.cs.struts.PasswordResetAction" input="/PasswordReset.jsp" parameter="reqCode" name="resetPasswordForm" scope="request">
+			<forward name="success" path="/Welcome.jsp">
+			</forward>
+		</action>
+		<action path="/WorkloadSearchAction" type="org.dhhs.dirm.acts.cs.struts.WorkloadSearchAction" input="/WorkloadSearch.jsp" parameter="reqCode" name="workloadFormBean" scope="request">
+			<forward name="transfer" path="/ManageTaskAction.do">
+			</forward>
+			<forward name="success" path="/WorkloadSearch.jsp">
+			</forward>
+		</action>
+		<action path="/WorkloadSearch" type="org.apache.struts.actions.ForwardAction" parameter="/WorkloadSearch.jsp">
+		</action>
+		<action path="/WorkloadManagement" type="org.apache.struts.actions.ForwardAction" parameter="/WorkloadManagement.jsp">
+		</action>
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="ApplicationResources"/>
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn"> <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/></plug-in>
+</struts-config>

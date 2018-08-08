@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Struts Validation Configuration 1.1//EN" "C://WorkingDirectory//ApplicationServers//eCSTS//validator_1_1.dtd">
+<form-validation>
+	<formset>
+		<form name="logonForm">
+			<field property="username" depends="required,mask">
+				<msg key="logonForm.username.formatmsg" name="mask" />
+				<arg0 key="logonForm.username.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="password" depends="required,mask">
+				<arg0 key="logonForm.password.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z0-9]*$</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="resetPasswordForm">
+			<field property="username" depends="required,mask">
+				<msg key="logon.username.formatmsg" name="mask" />
+				<arg0 key="logon.username.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="newPassword" depends="required,mask">
+				<arg0 key="logon.password.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z0-9]*$</var-value>
+				</var>
+			</field>
+			<field property="confirmPassword" depends="required,mask">
+				<arg0 key="logon.password.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>^[a-zA-Z0-9]*$</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="taskSearchForm">
+			<field property="nbCase" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nbCase.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="idPart" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.idPart.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="nbSSN" depends="mask">
+				<msg key="errors.ssn" name="mask"></msg>
+				<arg0 key="manageTaskForm.nbSSN.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{3}-\d{2}-\d{4})|(^\d{9}$)</var-value>
+				</var>
+			</field>
+			<field property="idEmail" depends="email">
+				<arg0 key="manageTaskForm.idEmail.displayName" />
+			</field>
+			<field property="dtReceived" depends="mask">
+			    <msg key="errors.date" name="mask"></msg>
+			    <arg0 key="manageTaskForm.dtReceived.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>
+			<field property="dtCompleted" depends="mask">
+			    <msg key="errors.date" name="mask"></msg>
+				<arg0 key="manageTaskForm.dtCompleted.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>
+			<field property="dtDue" depends="mask">
+			    <msg key="errors.date" name="mask"></msg>
+				<arg0 key="manageTaskForm.dtDue.displayName" ></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="manageTaskForm">
+			<field property="nbCase" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nbCase.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="idPart" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.idPart.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="nbSSN" depends="mask">
+				<msg key="errors.ssn" name="mask"></msg>
+				<arg0 key="manageTaskForm.nbSSN.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{3}-\d{2}-\d{4})|(^\d{9}$)</var-value>
+				</var>
+			</field>
+			<field property="idEmail" depends="email">
+				<arg0 key="manageTaskForm.idEmail.displayName" ></arg0>
+			</field>
+			<field property="idEmailConfirm" depends="email">
+				<arg0 key="manageTaskForm.idEmailConfirm.displayName" />
+			</field>
+			<field property="nbTelAcd" depends="mask">
+				<msg key="errors.numeric" name="mask" />
+				<arg0 key="manageTaskForm.phone.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>\d{3}$</var-value>
+				</var>
+			</field>
+			<field property="nbTelExc" depends="mask">
+				<msg key="errors.numeric" name="mask" />
+				<arg0 key="manageTaskForm.phone.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>\d{3}$</var-value>
+				</var>
+			</field>
+			<field property="nbTelLn" depends="mask">
+				<msg key="errors.numeric" name="mask" />
+				<arg0 key="manageTaskForm.phone.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>\d{4}$</var-value>
+				</var>
+			</field>
+			<field property="nbTelExt" depends="mask">
+				<msg key="errors.numeric" name="mask" />
+				<arg0 key="manageTaskForm.phone.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z0-9]</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmAuthorLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmAuthorLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmCustParLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmCustParLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParMi" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParMi.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="nmNonCustParLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="manageTaskForm.nmNonCustParLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="actsWorkerSearchForm">
+		    <field property="lastname" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="actsWorkerSearchForm.lastname.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+		    <field property="firstname" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="actsWorkerSearchForm.firstname.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="userSearchForm">
+		    <field property="lastname" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="userSearchForm.lastname.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="firstname" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="userSearchForm.firstname.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="profileForm">
+			<field property="idProfile" depends="required">
+				<arg0 key="profileForm.idProfile.displayName" />
+			</field>
+			<field property="idProfileDesc" depends="required">
+				<arg0 key="profileForm.idProfileDesc.displayName" />
+			</field>
+		</form>
+		<form name="referralTypeForm">		
+			<field property="type" depends="required">
+				<arg0 key="referralTypeForm.type.displayName" />
+			</field>
+			<field property="description" depends="required">
+				<arg0 key="referralTypeForm.discription.displayName" />
+			</field>
+		</form>
+		<form name="referralProcess">
+			<field property="seq" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="referralProcess.sequenceNumber.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="duration" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="referralProcess.duration.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="processTypeForm">
+			<field property="step" depends="required">
+				<arg0 key="processForm.step.displayName" />
+			</field>
+			<field property="description" depends="required">
+				<arg0 key="processForm.discription.displayName" />
+			</field>
+		</form>
+		<form name="referralOffice">
+			<field property="nmOffice" depends="required">
+				<arg0 key="referralOffice.nmOffice.displayName" />
+			</field>
+			<field property="nmOfficeDesc" depends="required">
+				<arg0 key="referralOffice.nmOfficeDesc.displayName" />
+			</field>
+		</form>
+		<form name="manageWorkloadForm">
+			<field property="pctOutstanding" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageWorkloadForm.pctOutstanding.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="pctPending" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="manageWorkloadForm.pctPending.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="correspondenceReportForm">
+			<field property="customerFirst" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="correspondenceReportForm.customerFirst.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>			
+			<field property="customerLast" depends="mask">
+				<msg key="errors.alphanumeric" name="mask"></msg>
+				<arg0 key="correspondenceReportForm.customerLast.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[a-zA-Z]</var-value>
+				</var>
+			</field>
+			<field property="fromDate" depends="mask">
+			    <msg key="errors.date" name="date"></msg>
+				<arg0 key="correspondenceReportForm.fromDate.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>
+			<field property="toDate" depends="mask">
+			    <msg key="errors.date" name="date"></msg>
+				<arg0 key="correspondenceReportForm.toDate.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>			
+		</form>
+		<form name="referralSource">
+			<field property="nmStaff" depends="required">
+				<arg0 key="referralSource.nmStaff.displayName"></arg0>
+			</field>
+			<field property="title" depends="required">
+				<arg0 key="referralSource.title.displayName" />
+			</field>
+		</form>
+		<form name="workloadFormBean">
+			<field property="idReference" depends="mask">
+				<msg key="errors.numeric" name="mask"></msg>
+				<arg0 key="workloadFormBean.idReference.displayName" />
+				<var>
+					<var-name>mask</var-name>
+					<var-value>[0-9]</var-value>
+				</var>
+			</field>
+			<field property="fromDate" depends="mask">
+			    <msg key="errors.date" name="date"></msg>
+				<arg0 key="correspondenceReportForm.fromDate.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>
+			<field property="toDate" depends="mask">
+			    <msg key="errors.date" name="date"></msg>
+				<arg0 key="correspondenceReportForm.toDate.displayName"></arg0>
+				<var>
+					<var-name>mask</var-name>
+					<var-value>(\d{2}[/]\d{2}[/]\d{4}$)|(\d{2}\d{2}\d{4}$)</var-value>
+				</var>
+			</field>			
+		</form>
+	</formset>
+</form-validation>

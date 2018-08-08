@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;eCustomerServiceWeb&apos;&#x0D;&#x0A;- Original project: &apos;eCustomerServiceWeb&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ibm-web-bnd.xmi&#x0D;&#x0A;     ibm-web-bnd.xml&#x0D;&#x0A;     ibm-web-ext.xmi&#x0D;&#x0A;     ibm-web-ext.xml" description="Delete elements" element1="WebContent/WEB-INF/ibm-web-ext.xmi" element2="WebContent/WEB-INF/ibm-web-ext.xml" element3="WebContent/WEB-INF/ibm-web-bnd.xmi" element4="WebContent/WEB-INF/ibm-web-bnd.xml" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="4" stamp="1526311760482" subPackages="false" version="1.0"/>
+</session>
